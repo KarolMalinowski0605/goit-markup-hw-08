@@ -1,0 +1,23 @@
+.clients {
+    display: flex;
+    justify-content: space-around;
+    &__icon {
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        fill: $color-icons;
+        cursor: pointer;
+        transition: $transition-duration $transition-timing-function;
+        &:is(:hover, :focus) {
+            border-color: $brand-color-blue-button-hover;
+            fill: $brand-color-blue-button-hover;
+            outline: none;
+        }
+        
+    }
+
+    &__icon-svg {
+        width: 170px;
+        height: 92px;
+        padding: 16px 32px 16px 32px;
+    }
+}

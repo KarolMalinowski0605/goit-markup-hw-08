@@ -1,0 +1,80 @@
+.header {
+    padding: 24px 0px 25px;
+    border: solid 1px #ececec;
+
+    &__wrapper {
+        display: flex;
+        align-items: map-get($center, align-items);
+    }
+    &__nav {
+        display: flex;
+        align-items: map-get($center, align-items);
+        flex-grow: 1;
+    }
+    &__nav-list {
+        display: flex;
+        padding-left: 93px;
+        list-style-type: none;
+        gap: 46px;
+    }
+    &__nav-link {
+        font-weight: map-get($font-weight, medium);
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $brand-color-leading;
+        text-decoration: none;
+        display: flex;
+        transition: $transition-duration $transition-timing-function;
+
+        &:is(:hover, :focus) {
+            color: $brand-color-blue-button-hover;
+        }
+    }
+    &__contacts {
+        display: flex;
+        gap: 50px;
+        padding-left: 335px;
+    }
+
+    &__contacts > a {
+        font-weight: map-get($font-weight, medium);
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: $brand-color-grey-text;
+        transition: $transition-duration $transition-timing-function;
+        &:is(:hover, :focus) {
+            color: $brand-color-blue-button-hover;
+        }
+    }
+
+    &__contacts-icons {
+        display: flex;
+        justify-content: map-get($center, justify-content);
+        align-items: map-get($center, align-items);
+        gap: 10px;
+        flex-direction: row-reverse;
+        fill: $color-icons;
+        transition: $transition-duration $transition-timing-function;
+
+        &:is(:hover, :focus) {
+            fill: $brand-color-blue-button-hover;
+        }
+    }
+}
+
+.is-active {
+    position: relative;
+    color: $brand-color-blue-button-hover;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 46px;
+        width: 100%;
+        height: 4px;
+        background-color: $brand-color-blue-button-hover;
+        border-radius: 2px;
+    }
+}

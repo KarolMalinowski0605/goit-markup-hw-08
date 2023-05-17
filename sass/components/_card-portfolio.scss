@@ -1,0 +1,71 @@
+    .card {
+           &:hover, &:focus {
+      .card__animation {
+        transform: translateY(0);
+        transition: $transition-duration $transition-timing-function;
+      }}
+      &__img {
+        position: relative;
+        overflow: hidden;
+        }
+        
+        &__animation {
+            position: absolute;
+            margin: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 49px 45px 159px 24px;
+            background: rgba(33, 150, 243, 0.9);
+            transform: translateY(101%);
+            transition: $transition-duration $transition-timing-function;
+            font-size: 18px;
+            line-height: 1.55;
+            letter-spacing: 0.03em;
+            color: $brand-color-white;
+        }
+        &__subtitles {
+            border: 1px solid#EEEEEE;
+            border-top: none;
+            padding: 20px 24px;
+           
+        }
+        &__subtitles-title {
+            font-weight:map-get($center , bold );
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing: 0.06em;
+        }
+        &__subtitles-article{
+            font-size: 16px;
+            line-height: 1.87;
+            letter-spacing: 0.03em;
+            color: $brand-color-grey-text;
+        }
+        &__border:is(:hover, :focus) {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+            cursor: pointer;
+            outline: none;
+            transition: $transition-duration $transition-timing-function;
+        }}
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

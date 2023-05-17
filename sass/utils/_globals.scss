@@ -1,0 +1,32 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $brand-color-leading;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 94px 0;
+}
+img {
+    vertical-align: middle;
+}
+.headline-img {
+    font-weight: map-get($font-weight, bold);
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: map-get($center, align-items);
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+}
+

@@ -1,0 +1,48 @@
+.team-meamber {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $brand-color-white;
+    &__name {
+        font-size: 16px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+    &__name {
+        font-size: 16px;
+        line-height: 1.16;
+        text-align: map-get($center, text-align);
+        letter-spacing: 0.03em;
+    }
+
+    &__article {
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: map-get($center, text-align);
+        letter-spacing: 0.03em;
+        color: $brand-color-grey-text;
+        padding-top: 10px;
+    }
+}
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    background: $brand-color-white;
+    padding-inline: 32px;
+    &__icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        padding: 12px;
+        fill: $color-icons;
+        transition: $transition-duration $transition-timing-function;
+        &:is(:hover, :focus) {
+            fill: $brand-color-white;
+            background-color: $brand-color-blue-button-hover;
+        }
+    }
+}
+.team-background {
+    background-color:$icons-background-color;
+}

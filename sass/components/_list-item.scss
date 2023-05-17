@@ -1,0 +1,80 @@
+.list-icons {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 30px;
+    &__svg {
+        display: flex;
+        justify-content: map-get($center, justify-content);
+        align-items: map-get($center, align-items);
+        width: 270px;
+        height: 120px;
+        background: $icons-background-color;
+        border-radius: 4px;
+        padding: 25px 100px 25px 100px;
+    }
+}
+.list-item {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    &__title {
+        font-weight: map-get($font-weight, bold);
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+    }
+    &__text-wrapper {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $brand-color-grey-text;
+        margin-top: 10px;
+    }
+    &__team-border {
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    &__img {
+        position: relative;
+        
+    }
+
+    &__img-about-us {
+        width: 370px;
+        height: 294px;
+        padding: 0;
+    }
+    &__img-text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 27px;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: map-get($center, text-align);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        background: rgba(47, 48, 58, 0.8);
+        color: $brand-color-white;
+    }
+
+    
+
+       
+    &__team-border {
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    &__portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+       
+    }
+}
+.jobs {
+    margin-top: -94px;
+}
