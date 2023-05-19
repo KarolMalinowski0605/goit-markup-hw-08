@@ -10,9 +10,17 @@ body {
 }
 
 .container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+	max-width: 480px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+
+	@include tablet {
+		max-width: 768px;
+	}
+	@include desktop {
+		max-width: 1200px;
+	}
 }
 
 .section {
@@ -20,6 +28,9 @@ body {
 }
 img {
     vertical-align: middle;
+    display: block;
+  max-width: 100%;
+  height: auto;
 }
 .headline-img {
     font-weight: map-get($font-weight, bold);

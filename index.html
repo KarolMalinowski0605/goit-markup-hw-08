@@ -28,6 +28,19 @@
                     <a class="logo" href="./index.html"
                         >Web<span class="studio-black">Studio</span>
                     </a>
+                    <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+          >
+          <use href="./images/icons.svg#menu_24px"></use>
+            
+          </svg>
+        </button>
                     <ul class="header__nav-list">
                         <li>
                             <a
@@ -68,6 +81,41 @@
                     </a>
                 </div>
             </div>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button class="menu-toggle js-close-menu">
+                  <svg
+                    
+                    width="40"
+                    height="40"
+                  ><use href="./images/icons.svg#icon-close_40px"></use>
+                   
+                  </svg>
+                </button>
+          
+                <ul class="mobile-menu ">
+                  <li><a href="./index.html" class="mobile-menu__link mobile-menu__link--color ">Agencja</a></li>
+                  <li><a href="./portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+                  <li><a href="#" class="mobile-menu__link">Kontakt</a></li>
+                </ul>
+                <div class="mobile-menu__contacts">
+                    <a class=" mobile-menu__contacts-link mobile-menu__contacts-link--font-color"  href="tel:+48111111111" 
+                        >+48 111 111 111
+                    </a>
+                    <a class=" mobile-menu__contacts-link"
+                        href="mailto:info@devstudio.com"
+                    >
+                        info@devstudio.com
+                        </a>
+                </div>
+                <div class="mobile-menu__social-media">
+                
+                    <a class="mobile-menu__social-media-link" href="#">Instagram</a>
+                    <a class="mobile-menu__social-media-link"  href="#"> Twitter</a>
+                    <a class="mobile-menu__social-media-link" href="#">Facebook</a>
+                    <a class="mobile-menu__social-media-link" href="#">Linkedin</a>
+                </div>
+                
+              </div>
         </header>
         <main>
             <!-- _page-hero -->
@@ -746,6 +794,14 @@
                 </from>
             </div>
         </footer>
+        <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+        <!-- <script src="./js/mobile-menu.js"></script> -->
         <script src="./js/modal.js"></script>
     </body>
 </html>
