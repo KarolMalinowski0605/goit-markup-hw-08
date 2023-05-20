@@ -1,20 +1,20 @@
 .hero {
     background-color: $brand-color-background-footer;
-    padding: 200px 0px;
-    background-image: url('../images/background-image.jpg'),
+    padding-top: 118px;
+    background-image: url('../images/background-image-480px.jpg'),
         linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-    background-position: 50% 50%;
+    
     background-repeat: no-repeat;
     text-align: map-get($center, text-align);
     &__text {
         font-weight: map-get($font-weight, ultraBold);
-        font-size: 44px;
-        line-height: 1.36;
+        font-size: 26px;
+        line-height: 1.66;
         text-align: map-get($center, text-align);
         letter-spacing: 0.06em;
         color: $brand-color-white;
         margin-bottom: 30px;
-        padding: 0 252px;
+        padding: 0 42px;
     }
 
     &__button {
@@ -25,9 +25,43 @@
         color: $brand-color-white;
         cursor: pointer;
         display: flex;
-        margin-left: 499px;
+        margin-left: 140px;
         padding: 10px 41px 10px 42px;
         border-radius: 4px;
         border: none;
     }
 }
+
+// .hero {
+//     background-color: $brand-color-background-footer;
+//     padding: 200px 0px;
+//     background-image: url('../images/background-1200px.jpg'),
+//         linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+//     background-position: 50% 50%;
+//     background-repeat: no-repeat;
+//     text-align: map-get($center, text-align);
+//     &__text {
+//         font-weight: map-get($font-weight, ultraBold);
+//         font-size: 44px;
+//         line-height: 1.36;
+//         text-align: map-get($center, text-align);
+//         letter-spacing: 0.06em;
+//         color: $brand-color-white;
+//         margin-bottom: 30px;
+//         padding: 0 252px;
+//     }
+
+//     &__button {
+//         background: $brand-color-blue-button-hover;
+//         font-weight: map-get($font-weight, bold);
+//         font-size: 16px;
+//         line-height: 1.87;
+//         color: $brand-color-white;
+//         cursor: pointer;
+//         display: flex;
+//         margin-left: 499px;
+//         padding: 10px 41px 10px 42px;
+//         border-radius: 4px;
+//         border: none;
+//     }
+// }
