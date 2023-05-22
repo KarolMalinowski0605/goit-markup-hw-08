@@ -1,9 +1,9 @@
 .list-icons {
-    display: flex;
+    display: none;
     margin-bottom: 30px;
     gap: 30px;
     &__svg {
-        display: flex;
+        display: none;
         justify-content: map-get($center, justify-content);
         align-items: map-get($center, align-items);
         width: 270px;
@@ -14,8 +14,8 @@
     }
 }
 .list-item {
+    display: none;
     list-style-type: none;
-    display: flex;
     gap: 30px;
     &__title {
         font-weight: map-get($font-weight, bold);
@@ -69,7 +69,7 @@
             0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     }
     &__portfolio {
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         gap: 30px;
        

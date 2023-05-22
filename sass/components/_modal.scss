@@ -17,9 +17,16 @@
     transition-timing-function: linear;
 }
 .modal {
+<<<<<<< HEAD
+    transition: transform 250ms linear;
+    transform:  scale(1) rotate(0);
+    position: absolute;
+    margin:93px 15px 94px 15px ;
+=======
    margin:93px 15px 94px 15px ;
    position:absolute;
    
+>>>>>>> 781a813255025b9372022a2dc90b049dc483e1b6
     width: 450px;
     min-height: 609px;
     background-color: $brand-color-white;
@@ -27,6 +34,24 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
+<<<<<<< HEAD
+    &__close {
+        position: absolute;
+        opacity: 1;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $brand-color-white;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        color:$brand-color-leading ;
+        &:is(:hover, :focus) {
+            color: $brand-color-blue-button-hover;
+                    }
+
+=======
    &__close {
     position: absolute;
     opacity: 1;
@@ -41,16 +66,23 @@
     &:is(:hover, :focus) {
         color: $brand-color-blue-button-hover;
                 }
+>>>>>>> 781a813255025b9372022a2dc90b049dc483e1b6
     }
     
         
     & > p {
-        font-weight: 700;
+        font-weight: map-get($font-weight , bold );
         font-size: 20px;
         line-height: 1.15;
         text-align: map-get($center, text-align);
         letter-spacing: 0.03em;
+<<<<<<< HEAD
+        color: $brand-color-leading;
+        
+    }
+=======
         color: $brand-color-leading;   }
+>>>>>>> 781a813255025b9372022a2dc90b049dc483e1b6
     &__label {
         display: flex;
         font-weight: map-get($font-weight, normal);
@@ -60,7 +92,11 @@
         color: $brand-color-grey-text;
         margin-top: 12px;
         margin-bottom: 4px;
+<<<<<<< HEAD
+        &--color{color:$brand-color-blue-button-hover};
+=======
         &--color{color:$brand-color-blue-button-hover}
+>>>>>>> 781a813255025b9372022a2dc90b049dc483e1b6
     }
     &__input {
         position: relative;
@@ -109,13 +145,21 @@
 
     &__checkbox {
         display: flex;
+<<<<<<< HEAD
+       margin-top: 20px;
+=======
         margin-top: 20px;
+>>>>>>> 781a813255025b9372022a2dc90b049dc483e1b6
     }
 
     &__regulations-and-policy-text {
         display: flex;
         font-size: 12px;
+<<<<<<< HEAD
+        line-height: 1.7;
+=======
         line-height: 1.6;
+>>>>>>> 781a813255025b9372022a2dc90b049dc483e1b6
         letter-spacing: 0.03em;
         color: $brand-color-grey-text;
         margin-top: 2px;

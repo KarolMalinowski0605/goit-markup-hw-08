@@ -3,16 +3,16 @@
     padding: 60px;
 }
 .footer {
-    display: flex;
+    display: none;
     gap: 70px;
     &__adress {
-        display: flex;
+        display: none;
         flex-direction: column;
         gap: 9px;
         
     }
     &__adress-link {
-        display: flex;
+        display:none;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
@@ -22,7 +22,7 @@
         width: fit-content;
     }
     &__adress-mail-tel {
-        display: flex;
+        display: none;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
@@ -35,7 +35,7 @@
         }
     }
     &__social-media {
-        display: flex;
+        display: none;
         flex-direction: column;
         padding-top: 12px;
         
@@ -49,13 +49,13 @@
     }
     &__social-media-list {
         list-style: none;
-        display: flex;
+        display: none;
         gap: 10px;
 
        
     }
     &__social-media-list-icon {
-        display: flex;
+        display: none;
         width: 44px;
         height: 44px;
         border-radius: 50%;
@@ -71,7 +71,7 @@
     }
     &__label {
         padding-top: 12px;
-        display: flex;
+        display: none;
         font-weight: 700;
         padding-bottom: 20px;
         font-size: 14px;
