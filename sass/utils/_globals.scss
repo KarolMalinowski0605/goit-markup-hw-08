@@ -24,8 +24,7 @@ body {
 }
 
 .section {
-    padding: 94px 0;
-    
+    padding: 60px 0;
 }
 img {
     vertical-align: middle;
@@ -35,7 +34,7 @@ img {
 
 }
 .headline-img {
-    display: flex;
+    display: none;
     font-weight: map-get($font-weight, bold);
     font-size: 36px;
     line-height: 1.16;
