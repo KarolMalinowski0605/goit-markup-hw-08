@@ -25,9 +25,10 @@
     }
 }
 .social-media {
-    display: none;
-    justify-content: space-around;
-    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 24px;
     background: $brand-color-white;
     padding-inline: 32px;
     &__icon {
@@ -44,5 +45,5 @@
     }
 }
 .team-background {
-    background-color:$icons-background-color;
+    background-color: $icons-background-color;
 }

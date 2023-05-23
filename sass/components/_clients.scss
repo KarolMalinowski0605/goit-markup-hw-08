@@ -1,6 +1,7 @@
 .clients {
-    display: none;
-    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
     &__icon {
         border: 1px solid #afb1b8;
         border-radius: 4px;
@@ -12,11 +13,10 @@
             fill: $brand-color-blue-button-hover;
             outline: none;
         }
-        
     }
 
     &__icon-svg {
-        width: 170px;
+        width: 210px;
         height: 92px;
         padding: 16px 32px 16px 32px;
     }

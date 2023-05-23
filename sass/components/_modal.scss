@@ -1,12 +1,13 @@
 .backdrop {
     position: fixed;
     background: rgba(0, 0, 0, 0.2);
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    inset: 0;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -15,18 +16,26 @@
     transition-delay: 250ms;
     transition-timing-function: linear;
 }
+
+.is-hidden .modal {
+    transform: scale(0) rotate(45deg);
+}
+
 .modal {
-    transition: transform 250ms linear;
-    transform:  scale(1) rotate(0);
-    position: absolute;
-    margin:93px 15px 94px 15px ;
-    width: 450px;
+    position: relative;
+    max-width: 450px;
+    width: 100%;
     min-height: 609px;
     background-color: $brand-color-white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
+
+    opacity: 1;
+    transform: scale(1) rotate(0);
+    transition: transform 250ms linear;
+
     &__close {
         position: absolute;
         opacity: 1;
@@ -38,21 +47,21 @@
         background-color: $brand-color-white;
         border: 1px solid rgba(0, 0, 0, 0.1);
         cursor: pointer;
-        color:$brand-color-leading ;
+        color: $brand-color-leading;
         &:is(:hover, :focus) {
             color: $brand-color-blue-button-hover;
-                    }
-
+        }
     }
+
     & > p {
-        font-weight: map-get($font-weight , bold );
+        font-weight: map-get($font-weight, bold);
         font-size: 20px;
         line-height: 1.15;
         text-align: map-get($center, text-align);
         letter-spacing: 0.03em;
         color: $brand-color-leading;
-        
     }
+
     &__label {
         display: flex;
         font-weight: map-get($font-weight, normal);
@@ -62,10 +71,14 @@
         color: $brand-color-grey-text;
         margin-top: 12px;
         margin-bottom: 4px;
-        &--color{color:$brand-color-blue-button-hover};
+        &--color {
+            color: $brand-color-blue-button-hover;
+        }
     }
+
     &__input {
         position: relative;
+
         & > input {
             border: 1px solid rgba(33, 33, 33, 0.2);
             border-radius: 4px;
@@ -78,6 +91,7 @@
                 border-color: $brand-color-blue-button-hover;
             }
         }
+
         & > svg {
             position: absolute;
             top: 11px;
@@ -86,13 +100,15 @@
             transition: $transition-duration $transition-timing-function;
             fill: $brand-color-leading;
         }
+
         &:focus-within svg {
             fill: $brand-color-blue-button-hover;
         }
     }
+
     &__checkbox-label {
         display: flex;
-        width: 16px;
+        min-width: 16px;
         height: 15px;
         border: 2px solid $brand-color-black;
         border-radius: 2px;
@@ -104,6 +120,7 @@
     &__checkbox-input {
         display: none;
     }
+
     &__checkbox-input:checked + &__checkbox-label {
         border: none;
         background-image: url('../images/iconcheck.jpg');
@@ -111,11 +128,13 @@
 
     &__checkbox {
         display: flex;
-       margin-top: 20px;
+        margin-top: 20px;
     }
 
     &__regulations-and-policy-text {
         display: flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
         font-size: 12px;
         line-height: 1.7;
         letter-spacing: 0.03em;
@@ -139,11 +158,8 @@
     }
 }
 
-.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0) rotate(45deg);
-}
 .textarea {
-    width: 370px;
+    width: 100%;
     height: 120px;
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);

@@ -9,30 +9,39 @@ body {
     padding: 0;
 }
 
-.container {
-	max-width: 480px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 15px;
-
-	@include tablet {
-		max-width: 768px;
-	}
-	@include desktop {
-		max-width: 1200px;
-	}
+ul {
+    list-style: none;
 }
 
 .section {
     padding: 60px 0;
+
+    @include desktop {
+        padding: 94px 0;
+    }
 }
+
+.container {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @include tablet {
+        max-width: 768px;
+    }
+    @include desktop {
+        max-width: 1200px;
+    }
+}
+
 img {
     vertical-align: middle;
     display: block;
-  max-width: 100%;
-  height: auto;
-
+    max-width: 100%;
+    height: auto;
 }
+
 .headline-img {
     display: flex;
     justify-content: center;
@@ -40,7 +49,6 @@ img {
     font-size: 28px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     color: $brand-color-black;
 }
-
