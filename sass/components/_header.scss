@@ -1,6 +1,9 @@
 .header {
     padding: 16px 0px 16px;
     border: solid 1px #ececec;
+    @include tablet {
+        padding: 26px 0 26px;
+    }
 
     &__wrapper {
         display: flex;
@@ -16,6 +19,10 @@
         padding-left: 93px;
         list-style-type: none;
         gap: 46px;
+        @include tablet {
+            display: flex;
+            align-items: center;
+        }
     }
     &__nav-link {
         display: none;
@@ -31,6 +38,9 @@
         &:is(:hover, :focus) {
             color: $brand-color-blue-button-hover;
         }
+        @include tablet {
+            display: flex;
+        }
 
         &--active {
             color: $brand-color-blue-button-hover;
@@ -42,13 +52,21 @@
                 height: 4px;
                 background-color: $brand-color-blue-button-hover;
                 border-radius: 2px;
+                @include tablet {
+                    top: 52px;
+                }
             }
         }
     }
     &__contacts {
         display: none;
-        gap: 50px;
-        padding-left: 335px;
+
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 101px;
+            gap: 8px;
+        }
     }
 
     &__contacts > a {
@@ -62,19 +80,27 @@
         &:is(:hover, :focus) {
             color: $brand-color-blue-button-hover;
         }
+        @include tablet {
+            display: flex;
+        }
     }
 
     &__contacts-icons {
         display: none;
         justify-content: map-get($center, justify-content);
         align-items: map-get($center, align-items);
-        gap: 10px;
+
         flex-direction: row-reverse;
         fill: $color-icons;
         transition: $transition-duration $transition-timing-function;
 
         &:is(:hover, :focus) {
             fill: $brand-color-blue-button-hover;
+        }
+        @include tablet {
+            display: flex;
+
+            gap: 8px;
         }
     }
 }
@@ -88,6 +114,9 @@
     fill: $brand-color-black;
     &:is(:hover, :focus) {
         fill: $brand-color-blue-button-hover;
+    }
+    @include tablet {
+        display: none;
     }
 }
 

@@ -23,6 +23,9 @@
         @include tablet {
             max-width: 354px;
         }
+        @include desktop {
+            max-width: 270px;
+        }
     }
 
     &__wrapper {
@@ -41,6 +44,7 @@
     }
 
     &__title {
+        text-align: center;
         font-weight: map-get($font-weight, bold);
         font-size: 14px;
         line-height: 1.14;

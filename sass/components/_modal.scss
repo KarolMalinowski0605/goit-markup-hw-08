@@ -31,7 +31,6 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
-
     opacity: 1;
     transform: scale(1) rotate(0);
     transition: transform 250ms linear;
@@ -50,10 +49,13 @@
         color: $brand-color-leading;
         &:is(:hover, :focus) {
             color: $brand-color-blue-button-hover;
+            @include tablet {
+                color: $brand-color-leading;
+            }
         }
     }
 
-    & > p {
+    &__title {
         font-weight: map-get($font-weight, bold);
         font-size: 20px;
         line-height: 1.15;
@@ -73,6 +75,9 @@
         margin-bottom: 4px;
         &--color {
             color: $brand-color-blue-button-hover;
+        }
+        @include tablet {
+            color: $brand-color-grey-text;
         }
     }
 
