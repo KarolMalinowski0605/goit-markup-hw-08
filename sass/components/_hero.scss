@@ -26,7 +26,7 @@
     }
 
     @include desktop {
-        
+        padding: 200px 0;
         background-image: url('../images/desktop-background-image.jpg'),
             linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 
@@ -51,8 +51,9 @@
             padding: 0 174px;
         }
         @include desktop {
+            text-align: center;
             font-size: 44px;
-            padding: 0 252px;
+            padding: 0 225px;
         }
     }
 

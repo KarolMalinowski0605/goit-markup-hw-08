@@ -129,6 +129,7 @@
         margin-bottom: 20px;
         @include desktop {
             justify-content: flex-start;
+            margin-bottom: initial;
         }
     }
     &__label-input {
@@ -163,7 +164,7 @@
         line-height: 1.9;
         letter-spacing: 0.06em;
         @include desktop {
-            margin-top: 56px;
+            margin-top: 36px;
         }
     }
 
