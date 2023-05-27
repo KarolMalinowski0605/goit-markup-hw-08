@@ -2,9 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 26px;
+    justify-content: center;
 
-    @include tablet {
-    }
     @include desktop {
         flex-wrap: nowrap;
     }
