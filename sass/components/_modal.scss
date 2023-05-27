@@ -35,6 +35,12 @@
     transform: scale(1) rotate(0);
     transition: transform 250ms linear;
 
+    @include desktop {
+        max-width: 528px;
+        width: 100%;
+        min-height: 581px;
+    }
+
     &__close {
         position: absolute;
         opacity: 1;
@@ -134,6 +140,9 @@
     &__checkbox {
         display: flex;
         margin-top: 20px;
+        @include desktop {
+            padding-left: 15px;
+        }
     }
 
     &__regulations-and-policy-text {
@@ -144,6 +153,9 @@
         line-height: 1.7;
         letter-spacing: 0.03em;
         color: $brand-color-grey-text;
+        @include desktop {
+            font-size: 14px;
+        }
     }
 
     &__button {

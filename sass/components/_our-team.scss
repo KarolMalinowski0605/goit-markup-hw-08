@@ -2,18 +2,12 @@
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: $brand-color-white;
-    @include tablet {
-        max-width: 354px;
-        width: 100%;
-    }
 
     &__name {
         font-size: 16px;
         line-height: 1.16;
         text-align: map-get($center, text-align);
         letter-spacing: 0.03em;
-        @include tablet {
-        }
     }
 
     &__article {
@@ -32,9 +26,7 @@
     padding-bottom: 24px;
     background: $brand-color-white;
     padding-inline: 32px;
-    @include tablet {
-        max-width: 354px;
-    }
+
     &__icon {
         width: 44px;
         height: 44px;

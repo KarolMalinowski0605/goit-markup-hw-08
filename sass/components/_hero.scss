@@ -1,4 +1,5 @@
 .hero {
+    background-position: 50% 50%;
     text-align: center;
     background-color: $brand-color-background-footer;
     padding: 118px 0;
@@ -25,6 +26,7 @@
     }
 
     @include desktop {
+        
         background-image: url('../images/desktop-background-image.jpg'),
             linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 
@@ -35,14 +37,8 @@
         }
     }
 
-    // & > div {
-    //     text-align: center;
-    // }
-
     &__text {
         margin: 0 auto;
-        max-width: 355px;
-        display: flex;
         font-weight: map-get($font-weight, ultraBold);
         font-size: 26px;
         line-height: 1.3;
@@ -50,8 +46,13 @@
         letter-spacing: 0.06em;
         color: $brand-color-white;
         margin-bottom: 30px;
+        padding: 0 42px;
         @include tablet {
-            max-width: 390px;
+            padding: 0 174px;
+        }
+        @include desktop {
+            font-size: 44px;
+            padding: 0 252px;
         }
     }
 

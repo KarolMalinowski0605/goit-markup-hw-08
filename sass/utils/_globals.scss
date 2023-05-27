@@ -51,4 +51,7 @@ img {
     letter-spacing: 0.03em;
     padding-bottom: 30px;
     color: $brand-color-black;
+    @include desktop {
+        padding-bottom: 50px;
+    }
 }

@@ -1,7 +1,15 @@
 .clients {
     display: flex;
     flex-wrap: wrap;
-     gap: 10px;
+    gap: 10px;
+    @include tablet {
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    @include desktop {
+        flex-wrap: nowrap;
+    }
 
     &__icon {
         border: 1px solid #afb1b8;
@@ -17,7 +25,7 @@
     }
 
     &__icon-svg {
-        width: 210px;
+        width: 170px;
         height: 92px;
         padding: 16px 32px 16px 32px;
     }
