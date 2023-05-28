@@ -63,6 +63,9 @@
         align-items: center;
         margin-bottom: 60px;
         padding-top: 5px;
+        @include desktop {
+            align-items: initial;
+        }
     }
     &__social-media-title {
         font-size: 14px;
